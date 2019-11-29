@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components'
+import Calendar from 'react-calendar';
+import './Main.css';
 
 class Main extends React.Component {
   constructor(props) {
@@ -9,8 +11,9 @@ class Main extends React.Component {
   render() {
     return (
       <>
+        <Calendar className="calendar"></Calendar>
       </>
     );
   }
 }
-export default withLayout(Main);
+export default Main;
